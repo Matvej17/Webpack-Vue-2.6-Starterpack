@@ -1,0 +1,75 @@
+html {
+    font-family: 'Changa One', cursive;
+    scroll-behavior: smooth;
+}
+
+body {
+    overflow-x: hidden;
+
+    &.fixed {
+        overflow: hidden;
+    }
+}
+
+* {
+    box-sizing: border-box;
+
+    &::after, &::before {
+        box-sizing: border-box;
+    }
+
+    &:hover, &:focus {
+        outline:none;
+    }
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+#app {
+    display: block;
+    width: 100%;
+
+    .row {
+        display: block;
+        width: 100%;
+        max-width: 1392px;
+        margin: 0 auto;
+        padding: 0 64px;
+    }
+}
+
+@media (max-width: 1199px) {
+    #app {
+    
+        .row {
+            max-width: 100%;
+            padding: 0 48px;
+        }
+    }
+}
+
+@media (max-width: 991px) {
+    #app {
+    
+        .row {
+            padding: 0 32px;
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    #app {
+    
+        .row {
+            padding: 0 16px;
+        }
+    }
+}
